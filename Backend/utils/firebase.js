@@ -3,14 +3,13 @@ import { getAuth } from "firebase/auth"; // Add this for authentication
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyClG9EbU9n_3tyAOiV2MJADnp9YV5gUh2Q",
-  authDomain: "bombooworld-ba410.firebaseapp.com",
-  projectId: "bombooworld-ba410",
-  storageBucket: "bombooworld-ba410.firebasestorage.app",
-  messagingSenderId: "1055253396005",
-  appId: "1:1055253396005:web:b629f6b117a15ce437ddcc",
-  measurementId: "G-1342KP4ZW0",
-  
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
