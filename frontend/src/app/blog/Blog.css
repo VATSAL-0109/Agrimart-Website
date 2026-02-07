@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blog-wrapper {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+/* Hero Section */
+.blog-hero {
+  background: url('/images/CarouselImage/newimg/carouselimg10.jpg') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-hero .overlay {
+  color: white;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.blog-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.blog-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Blog Section */
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 60px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h2 {
+  font-size: 1.3rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #1b5e20;
+}

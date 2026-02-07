@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# env
+.env
+
+# logs
+*.log
+firebase-debug.log
+
+# uploads / user data
+uploads/
+
+# deployment
+.vercel

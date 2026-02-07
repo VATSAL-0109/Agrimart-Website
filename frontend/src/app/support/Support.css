@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.support-wrapper {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Hero Section */
+.support-hero {
+  background: url('/images/CarouselImage/newimg/carouselimg11.jpg') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-hero .overlay {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  width: 100%;
+}
+
+.support-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.support-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* FAQ Section */
+.faq-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.faq-question {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #16a34a;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1d5e2f;
+}
+
+/* Chat Section */
+.chat-section {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.chat-widget {
+  background-color: #25d366;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.chat-widget p {
+  margin: 0;
+}
+
+.chat-widget span {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #f0f0f0;
+}
